@@ -164,7 +164,7 @@ packages:
   xyl_platform_interface:
     dependency: "direct main"
     description:
-      path: "E:/studyProject/flutter_plugin/xyl_platform_interface"
+      path: "E:/studyProject/PLUGIN\\xylPlugin/xyl_platform_interface"
       relative: false
     source: path
     version: "0.0.1"
