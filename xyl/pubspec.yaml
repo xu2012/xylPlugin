@@ -11,11 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  xyl_platform_interface:
-    path: E:/studyProject/PLUGIN/xylPlugin/xyl_platform_interface
-    #    git: https://github.com/xu2012/xylPlugin/tree/main/xyl_platform_interface
-  xyl_web:
-    path: E:/studyProject/PLUGIN/xylPlugin/xyl_web
+  xyl_platform_interface: ^0.0.2
+  xyl_web: ^0.0.1
 
 dev_dependencies:
   flutter_test:
