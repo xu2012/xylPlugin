@@ -18,4 +18,5 @@ abstract class XylPlatform extends PlatformInterface {
   Future<String> testPlugin() {
     throw UnimplementedError("testPlugin has not been implemented.");
   }
+  void main(){}
 }

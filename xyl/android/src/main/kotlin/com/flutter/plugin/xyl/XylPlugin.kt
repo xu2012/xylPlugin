@@ -3,34 +3,47 @@ package com.flutter.plugin.xyl
 import androidx.annotation.NonNull
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
-import io.flutter.plugin.common.MethodCall
-import io.flutter.plugin.common.MethodChannel
-import io.flutter.plugin.common.MethodChannel.MethodCallHandler
-import io.flutter.plugin.common.MethodChannel.Result
-import io.flutter.plugin.common.PluginRegistry.Registrar
+import io.flutter.embedding.engine.plugins.activity.ActivityAware
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
+import io.flutter.plugin.common.PluginRegistry
 
 /** XylPlugin */
-class XylPlugin: FlutterPlugin, MethodCallHandler {
-  /// The MethodChannel that will the communication between Flutter and native Android
-  ///
-  /// This local reference serves to register the plugin with the Flutter Engine and unregister it
-  /// when the Flutter Engine is detached from the Activity
-  private lateinit var channel : MethodChannel
+class XylPlugin : FlutterPlugin, ActivityAware {
 
-  override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "xyl")
-    channel.setMethodCallHandler(this)
-  }
+    private var methodCallHandler: MethodCallHandlerImpl? = null
 
-  override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    } else {
-      result.notImplemented()
+    companion object {
+        fun registerWith(registrar: PluginRegistry.Registrar) {
+            val handler = MethodCallHandlerImpl(registrar.context())
+            handler.startListening(registrar.messenger())
+        }
     }
-  }
 
-  override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-    channel.setMethodCallHandler(null)
-  }
+    override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
+        methodCallHandler = MethodCallHandlerImpl(flutterPluginBinding.applicationContext);
+        methodCallHandler?.startListening(flutterPluginBinding.binaryMessenger)
+    }
+
+
+    override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
+        methodCallHandler?.stopListening()
+        methodCallHandler = null
+
+    }
+
+    override fun onAttachedToActivity(binding: ActivityPluginBinding) {
+        methodCallHandler?.setActivity(binding.activity)
+    }
+
+    override fun onDetachedFromActivityForConfigChanges() {
+        onDetachedFromActivity()
+    }
+
+    override fun onReattachedToActivityForConfigChanges(p0: ActivityPluginBinding) {
+        onAttachedToActivity(p0)
+    }
+
+    override fun onDetachedFromActivity() {
+        methodCallHandler?.setActivity(null)
+    }
 }
