@@ -1,6 +1,6 @@
 name: xyl_platform_interface
 description: A common platform interface for the xyl plugin..
-version: 0.0.2
+version: 0.0.3
 author: yunlong xu
 homepage: https://github.com/xu2012/xylPlugin/tree/main/xyl_platform_interface
 

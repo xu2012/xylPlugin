@@ -1,3 +1,7 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* first commit
+
+## 0.0.3
+
+* add plugin method
