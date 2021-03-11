@@ -13,8 +13,8 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  xyl_platform_interface:
-    path: E:/studyProject/PLUGIN/xylPlugin/xyl_platform_interface
+  xyl_platform_interface: ^0.0.2
+#    path: E:/studyProject/PLUGIN/xylPlugin/xyl_platform_interface
 dev_dependencies:
   flutter_test:
     sdk: flutter

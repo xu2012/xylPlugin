@@ -171,10 +171,10 @@ packages:
   xyl_platform_interface:
     dependency: transitive
     description:
-      path: "E:/studyProject/PLUGIN\\xylPlugin/xyl_platform_interface"
-      relative: false
-    source: path
-    version: "0.0.1"
+      name: xyl_platform_interface
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.2"
   xyl_web:
     dependency: "direct main"
     description:
