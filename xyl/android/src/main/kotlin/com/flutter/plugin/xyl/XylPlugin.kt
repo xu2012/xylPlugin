@@ -1,5 +1,7 @@
 package com.flutter.plugin.xyl
 
+import android.app.Activity
+import android.content.Context
 import androidx.annotation.NonNull
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -11,16 +13,18 @@ import io.flutter.plugin.common.PluginRegistry
 class XylPlugin : FlutterPlugin, ActivityAware {
 
     private var methodCallHandler: MethodCallHandlerImpl? = null
-
-    companion object {
+    private var activity: ActivityPluginBinding? = null
+    private var pluginBinding: FlutterPlugin.FlutterPluginBinding? = null
+    private val context: PickContext = V2Context()
+/*    companion object {
         fun registerWith(registrar: PluginRegistry.Registrar) {
-            val handler = MethodCallHandlerImpl(registrar.context())
+            val handler = MethodCallHandlerImpl(context)
             handler.startListening(registrar.messenger())
         }
-    }
+    }*/
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        methodCallHandler = MethodCallHandlerImpl(flutterPluginBinding.applicationContext);
+        methodCallHandler = MethodCallHandlerImpl(context)
         methodCallHandler?.startListening(flutterPluginBinding.binaryMessenger)
     }
 
@@ -28,11 +32,12 @@ class XylPlugin : FlutterPlugin, ActivityAware {
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
         methodCallHandler?.stopListening()
         methodCallHandler = null
-
     }
 
     override fun onAttachedToActivity(binding: ActivityPluginBinding) {
-        methodCallHandler?.setActivity(binding.activity)
+        activity = binding
+        binding.addActivityResultListener(context)
+
     }
 
     override fun onDetachedFromActivityForConfigChanges() {
@@ -44,6 +49,16 @@ class XylPlugin : FlutterPlugin, ActivityAware {
     }
 
     override fun onDetachedFromActivity() {
-        methodCallHandler?.setActivity(null)
+        activity?.removeActivityResultListener(context)
     }
+    private inner class V2Context : AbstractPickContext() {
+        override val activity: Activity
+            get() = this@XylPlugin.activity?.activity ?: error("No Activity")
+
+        override val context: Context
+            get() = this@XylPlugin.pluginBinding?.applicationContext
+                    ?: error("No context")
+
+    }
+
 }

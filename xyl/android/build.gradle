@@ -37,6 +37,11 @@ android {
         minSdkVersion 16
     }
 }
+repositories {
+    flatDir {
+        dirs project(':liveness').file('libs')
+    }
+}
 //获取local.properties配置文件
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
@@ -52,6 +57,7 @@ if (flutterRoot == null) {
 }
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(path: ':liveness')
     compileOnly files("$flutterRoot/bin/cache/artifacts/engine/android-arm/flutter.jar")
     compileOnly 'androidx.annotation:annotation:1.1.0'
 }

@@ -20,9 +20,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c77415a0-dec2-44bb-a900-2f816b029bff" name="Default Changelist" comment="commit code">
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/libs/guardian_core_v1.7.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/libs/liveness_lib_v1.2.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/java/ai/advance/liveness/sdk/activity/LivenessActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/java/ai/advance/liveness/sdk/activity/ResultActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/java/ai/advance/liveness/sdk/fragment/LivenessFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/blink_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/blink_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/blink_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/blink_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/icon_liveness_fail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/icon_liveness_success.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/liveness_close_voice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/liveness_open_voice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/open_mouse_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/open_mouse_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/open_mouse_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/open_mouse_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/open_mouse_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/turn_head_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/turn_head_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/turn_head_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable-xhdpi/turn_head_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/anim_frame_blink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/anim_frame_open_mouse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/anim_frame_turn_head.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/liveness_ic_icon_md_arrow_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/liveness_ic_mask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/liveness_selector_voice.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/liveness_shape_gradient_green.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/drawable/liveness_shape_right_timer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/layout/activity_liveness.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/layout/activity_result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/layout/fragment_liveness.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-hi-rIN/action_blink.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-hi-rIN/action_open_mouth.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-hi-rIN/action_turn_head.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-hi-rIN/detection_failed.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-hi-rIN/detection_success.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-in-rID/action_blink.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-in-rID/action_open_mouth.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-in-rID/action_turn_head.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-in-rID/detection_failed.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-in-rID/detection_success.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-th-rTH/action_blink.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-th-rTH/action_open_mouth.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-th-rTH/action_turn_head.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-th-rTH/detection_failed.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-th-rTH/detection_success.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-vi-rVN/action_blink.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-vi-rVN/action_open_mouth.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-vi-rVN/action_turn_head.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-vi-rVN/detection_failed.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw-vi-rVN/detection_success.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw/action_blink.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw/action_open_mouth.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw/action_turn_head.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw/detection_failed.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/raw/detection_success.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-hi-rIN/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-hi-rIN/strings_failed_reason.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-in-rID/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-in-rID/strings_failed_reason.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-th-rTH/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-th-rTH/strings_failed_reason.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-vi-rVN/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values-vi-rVN/strings_failed_reason.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values/colors_theme.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values/strings_failed_reason.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/liveness/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/src/main/kotlin/com/flutter/plugin/xyl/AbstractPickContext.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/src/main/kotlin/com/flutter/plugin/xyl/FileUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xyl/android/src/main/kotlin/com/flutter/plugin/xyl/PickContext.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/android/src/main/kotlin/com/flutter/plugin/xyl/MethodCallHandlerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/android/src/main/kotlin/com/flutter/plugin/xyl/MethodCallHandlerImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/android/src/main/kotlin/com/flutter/plugin/xyl/XylPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/android/src/main/kotlin/com/flutter/plugin/xyl/XylPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/lib/xyl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/lib/xyl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/xyl/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl_platform_interface/.flutter-plugins" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl_platform_interface/.flutter-plugins-dependencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl_platform_interface/lib/method_channel_xyl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/xyl_platform_interface/lib/method_channel_xyl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl_platform_interface/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/xyl_platform_interface/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xyl_web/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/xyl_web/example/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xyl_web/lib/xyl_web.dart" beforeDir="false" afterPath="$PROJECT_DIR$/xyl_web/lib/xyl_web.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xyl_web/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/xyl_web/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyl_web/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/xyl_web/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +136,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="D:/Android/sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xyl/android" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\studyProject\PLUGIN\xylPlugin\xyl_platform_interface\lib\bean" />
+      <recent name="E:\studyProject\PLUGIN\xylPlugin\xyl\android\src\main\kotlin\com\flutter\plugin\xyl\bean" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\studyProject\PLUGIN\xylPlugin\xyl_platform_interface\lib" />
+      <recent name="E:\studyProject\PLUGIN\xylPlugin\xyl\lib" />
+      <recent name="E:\studyProject\PLUGIN\xylPlugin\xyl\android\src\main\kotlin\com\flutter\plugin\xyl" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,7 +169,49 @@
       <option name="project" value="LOCAL" />
       <updated>1615374078632</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit code">
+      <created>1615374389125</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615374389125</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit code">
+      <created>1615444153506</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615444153506</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit code">
+      <created>1615444768812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615444768812</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit code">
+      <created>1615445062977</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615445062977</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit code">
+      <created>1615445119521</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615445119521</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit code">
+      <created>1615447495612</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615447495612</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,19 +224,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit code" />
     <option name="LAST_COMMIT_MESSAGE" value="commit code" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1615374289495">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1615448234320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615374289495" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1615374080928">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615448234320" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1615447497083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615374080928" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615447497083" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1615455011261">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615455011261" />
   </component>
 </project>
